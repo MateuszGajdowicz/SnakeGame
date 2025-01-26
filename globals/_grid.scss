@@ -1,0 +1,26 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1 fr;
+    margin: 0px;
+    gap: 40px;
+    grid-template-rows: auto auto;
+    align-content: end;
+    max-width: 1500px;
+    margin: 0 auto;
+
+
+    @media (min-width:900px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .grid__1{
+        background-color: hsl(88, 67%, 58%);
+    }
+    .grid__2{
+        background-color: hsl(310, 89%, 75%);
+    }
+    .grid__1,.grid__2{
+        padding: 30px;
+    }
+}
