@@ -1,0 +1,62 @@
+body {
+  background-image: url("../Deraemon-and-White-Sheep-Running-HD-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SnakeContainer {
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  border: 10px solid hsl(177, 69%, 53%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2;
+  position: relative;
+  gap: 3px;
+  border-radius: 10px;
+  opacity: 0.85;
+}
+
+.SnakePiece {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+}
+
+#snake1 {
+  background-color: red;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1 fr;
+  margin: 0px;
+  gap: 40px;
+  grid-template-rows: auto auto;
+  align-content: end;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.grid .grid__1 {
+  background-color: hsl(88, 67%, 58%);
+}
+.grid .grid__2 {
+  background-color: hsl(310, 89%, 75%);
+}
+.grid .grid__1, .grid .grid__2 {
+  padding: 30px;
+}/*# sourceMappingURL=style.css.map */
